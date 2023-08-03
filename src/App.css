@@ -1,38 +1,233 @@
-.App {
-  text-align: center;
+.head
+{
+  display: flex;
+  justify-content: center;
+}
+.bend
+{
+  font-size: 20px;
+  margin-right: 10px;
+  writing-mode:vertical-lr;
+}
+.viewbothSide
+{
+  display: flex;
+  gap: 50px;
+}
+.photo
+{
+  width: 400px;
+  height: 270px;
+  border-radius: 15px;
+}
+.photo2
+{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.mixPart
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 10px;
+}
+.mixPart2
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 10px;
+}
+.content
+{
+  width: 320px;
+}
+.content2
+{
+  width: 270px;
+}
+.line
+{
+  border-bottom: 5px solid red;
+  width: 200px;
+  margin-left: 10px;
+}
+.singleImage
+{
+  width: 570px;
+  height: 400px;
+}
+.size
+{
+  font-size: 17px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.removeLine
+{
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+}
+.btnarrow
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.detailsImage
+{
+  width: 800px;
+  height: 500px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.detailsContent
+{
+  width: 700px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainPart
+{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+  margin-bottom: 20px;
+}
+.details
+{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.manHead
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.allLogo
+{
+  width: 50px;
+  height: 50px;
+}
+.arrange
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 270px;
+}
+.clap
+{
+  display: flex;
+  gap: 20px;
+  color: grey;
+  position: fixed;
+  left: 40px;
+  top: 350px;
+
+}
+.share
+{
+  display: flex;
+  gap: 20px;
+  color:grey;
+  position: fixed;
+  left: 50px;
+  top: 400px;
+}
+.BackBtn
+{
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: blue;
   color: white;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (max-width: 560px){
+  .viewbothSide
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .mixPart
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .photo
+  {
+    width: 350px;
+  }
+  .mixPart2
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .photo2
+  {
+    width: 350px;
+  }
+  .content2
+  {
+    width: 350px;
+  }
+  .singleImage
+  {
+    width: 350px;
+  }
+  .single
+  {
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainPart
+  {
+    position: relative;
+  }
+  .clap
+  {
+    position: absolute;
+    top: 160px;
+    left: 260px;
+  }
+  .share
+  {
+    position: absolute;
+    top: 200px;
+    left: 260px;
+  }
+  .textOff
+  {
+    display: none;
+  }
+  .arrange
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+ .detailsContent
+ {
+  width: 350px;
+ }
+ .detailsImage{
+  width: 350px;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
