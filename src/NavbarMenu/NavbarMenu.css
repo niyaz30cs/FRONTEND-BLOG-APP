@@ -126,7 +126,7 @@
     }
   
     .nav-menu.active {
-      background-color: lightblue;
+      background-color: #1f5156;
       min-width: 375px;
       left: 0px;
       opacity: 1;

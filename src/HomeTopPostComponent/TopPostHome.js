@@ -1,14 +1,23 @@
 import React, { useContext } from 'react'
+// import "./video.css";
 import { Link } from 'react-router-dom';
 import { MyContext } from '../DataStore/DataPackage'
 import BollywoodSingle from '../SingleComponent/BollywoodSingle';
 import Bollywood from '../Component/Bollywood';
+// import Video from '../VideoComponent/Video';
+import baloon from "../VideoComponent/baloon.mp4"
+// import love from "../VideoComponent/love-036.mp4"
 
 function TopPostHome() {
     const[HomeTopPost]=useContext(MyContext);
   return (
     <div>
-        <div className='Advertise'><h1>Advertisement</h1></div>
+        <div className='Advertise'>
+        <video src={baloon} autoPlay loop muted={true} className='video' />
+        {/* <video src={love} autoPlay loop muted className='video' /> */}
+          {/* <Video/> */}
+          <div className='AddName'><h1>Advertisement</h1></div>
+          </div>
       <h1 className='line'>Top Post</h1>
       <BollywoodSingle/>
       {

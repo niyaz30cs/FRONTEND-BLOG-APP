@@ -3,6 +3,7 @@ import "./App.css";
 import NavbarMenu from './NavbarMenu/NavbarMenu'
 import DataPackage from './DataStore/DataPackage';
 import { BrowserRouter } from 'react-router-dom';
+import Footer from './FooterComponent/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NavbarMenu />
       </BrowserRouter>
       <DataPackage/>
+      <Footer/>
     </div>
   )
 }

@@ -6511,8 +6511,3 @@
   ]
 
 }
-
-
- {<button onClick={() => {setCount(count + 3);}}
- className='btnarrow'>Load More <img src={DownArrow} alt='down2' />
-</button>}

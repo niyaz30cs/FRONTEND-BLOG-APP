@@ -1,3 +1,11 @@
+body
+{
+  /* font-family: 'Alkatra', cursive; */
+  /* font-family: 'Black Han Sans', sans-serif; */
+  font-family: 'Prompt', sans-serif;
+  /* font-family: 'Signika', sans-serif; */
+  background-color: rgb(245, 249, 249);
+}
 .head
 {
   display: flex;
@@ -98,6 +106,7 @@
   align-items: center;
   position: relative;
   margin-bottom: 20px;
+  /* z-index: -1; */
 }
 .details
 {
@@ -131,6 +140,8 @@
   position: fixed;
   left: 40px;
   top: 350px;
+  /* background-color: blue; */
+  z-index: -1;
 
 }
 .share
@@ -141,16 +152,64 @@
   position: fixed;
   left: 50px;
   top: 400px;
+  /* background-color: blue; */
+  z-index: -1;
 }
 .BackBtn
 {
-  width: 200px;
-  height: 50px;
+  width: 170px;
+  height: 40px;
   border-radius: 30px;
   background-color: blue;
   color: white;
   font-size: 25px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+.BackBtn:hover
+{
+  background-color: black;
+  cursor: pointer;
+}
+.threeBtn
+{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 800px;
+}
+.bottomClap
+{
+  width: 800px;
+  display: flex;
+  
+}
+.boxShadow
+{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 5px;
+}
+.AllTheLatest2
+{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    /* background-color: #00000029; */
+} 
+.OnlyBackground
+{
+  background-color: #00000029;
+  z-index: 1;
+}
+.detailsBack
+{
+  display: flex;
+  justify-content: center;
+} 
+.lastPart
+{
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 560px){
@@ -204,12 +263,14 @@
     position: absolute;
     top: 160px;
     left: 260px;
+    display: none;
   }
   .share
   {
     position: absolute;
     top: 200px;
     left: 260px;
+    display: none;
   }
   .textOff
   {
@@ -228,6 +289,34 @@
  }
  .detailsImage{
   width: 350px;
+ }
+ .AllTheLatest2
+ {
+  display: flex;
+  flex-direction: column;
+ }
+ .boxShadow
+ {
+  width: 350px;
+ }
+ .threeBtn
+ {
+  width: 350px;
+ }
+ .bottomClap 
+ {
+  width: 350px;
+ }
+ .lastPart
+ {
+  /* border-bottom: 2px solid white; */
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+ }
+ .latestContent
+ {
+  height: 350px;
  }
 
 }
