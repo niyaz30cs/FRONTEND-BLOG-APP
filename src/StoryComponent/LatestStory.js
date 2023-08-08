@@ -3,7 +3,7 @@ import StoryBolly from './StoryBolly'
 import StoryHolly from './StoryHolly'
 import StoryTech from './StoryTech'
 import StoryFit from './StoryFit'
-import StoryFood from './StoryFood'
+// import StoryFood from './StoryFood'
 
 function LatestStory() {
   return (
@@ -14,7 +14,7 @@ function LatestStory() {
         <StoryHolly/>
         <StoryTech/>
         <StoryFit/>
-        <StoryFood/>
+        {/* <StoryFood/> */}
        </div>
     </>
   )

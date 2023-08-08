@@ -27,7 +27,7 @@ function NavbarMenu() {
         </div>
         <div className="nav-container">
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li>
+            {/* <li>
               <NavLink
                 to="/"
                 id="gohome"
@@ -40,7 +40,7 @@ function NavbarMenu() {
                   <div className="siren">Siren</div>
                 </div>
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink
                 // exact

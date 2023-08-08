@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <div className="head">
-        <h1> <span className="bend">The</span>Siren</h1>
+        <h1><span className="bend">The</span>Siren</h1>
       </div>
       <BrowserRouter>
       <NavbarMenu />
