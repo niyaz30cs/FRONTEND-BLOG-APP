@@ -1,11 +1,11 @@
-import React, { useContext,useState } from 'react'
-import DownArrow from "../downArrow.svg"
+import React, { useContext} from 'react'
+// import DownArrow from "../downArrow.svg"
 import { MyContext } from '../DataStore/DataPackage'
 import FoodTopPost from '../TopPostComponent/FoodTopPost';
 import { Link } from 'react-router-dom';
 
 function Food() {
-  const[count,setCount]=useState(10);
+  // const[count,setCount]=useState(10);
   const [foodData] = useContext(MyContext);
   console.log(foodData);
   return (
@@ -32,11 +32,11 @@ function Food() {
           <FoodTopPost />
         </div>
       </div>
-      {
+      {/* {
         <button onClick={() => {setCount(count + 3);}}
            className='btnarrow'>Load More <img src={DownArrow} alt='down2' />
         </button>
-      }
+      } */}
     </>
   )
 }

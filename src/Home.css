@@ -61,6 +61,7 @@
     width: 900px;
     height: 510px;
     border-radius: 30px;
+    margin-top: 5px;
     /* background-size: cover; */
 }
 .homeImage2
@@ -207,7 +208,8 @@
 @media screen and (max-width: 560px){
     .grid
     {
-        margin: 5;
+        margin: 5px;
+        margin-left: 10px;
     }
     .box1
     {

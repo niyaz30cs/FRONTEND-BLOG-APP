@@ -1,6 +1,6 @@
 .section__padding
 {
-    padding: 4rem 4rem;
+    padding: 1rem 1rem;
 }
 .footer
 {
@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     width: 100%;
     text-align: left;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 .sb__footer-link_div
 {

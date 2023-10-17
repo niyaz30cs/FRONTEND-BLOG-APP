@@ -1,11 +1,11 @@
-import React, { useContext,useState } from 'react'
-import DownArrow from "../downArrow.svg";
+import React, { useContext} from 'react'
+// import DownArrow from "../downArrow.svg";
 import { MyContext } from '../DataStore/DataPackage'
 import TechnologyTopPost from '../TopPostComponent/TechnologyTopPost';
 import { Link } from 'react-router-dom';
 
 function Technology() {
-  const[count,setCount]=useState(10);
+  // const[count,setCount]=useState(10);
   const [technologyData] = useContext(MyContext);
   console.log(technologyData);
   return (
@@ -32,11 +32,11 @@ function Technology() {
           <TechnologyTopPost />
         </div>
       </div>
-      {
+      {/* {
         <button onClick={() => {setCount(count + 3);}}
            className='btnarrow'>Load More <img src={DownArrow} alt='down2' />
         </button>
-      }
+      } */}
     </>
   )
 }
