@@ -1,13 +1,23 @@
-import React, { useContext } from 'react'
+import React, {useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import { MyContext } from '../DataStore/DataPackage'
+import axios from 'axios';
 
 function StoryFood() {
-    const[foodStoryData]=useContext(MyContext);
+    const[data,setData]=useState([])
+
+    useEffect(()=>{
+      axios.get("https://backend-api-rg16.onrender.com/api/blog")
+      .then((res)=>{
+        setData(res.data)
+      })
+      .catch((error)=>{
+        console.log(error);
+      })
+    },[data])
   return (
     <div>
       {
-        foodStoryData.filter((item)=>item.category==="Food" && item.id===83).map((value,index)=>{
+        data.filter((item)=>item.category==="Food" && item.id===83).map((value,index)=>{
             return(
                 <div key={index} className='LatestStory'>
                     {/* <div className='storyContent'> */}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate} from 'react-router-dom'
 import man from "../Mask Group 16.png"
 import facebook from "../facebook.png"
 import twitter from "../twitter.jpeg"
@@ -16,6 +16,8 @@ import TheLatestFood from '../TheLastestComponent/TheLatestFood'
 function Details() {
   const navigate = useNavigate();
   const niyaz = useLocation().state
+  console.log(niyaz);
+  console.log("hii");
   return (
     <>
       <div className='mainPart'>

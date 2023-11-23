@@ -199,7 +199,8 @@ body
 .OnlyBackground
 {
   background-color: #00000029;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
 }
 .detailsBack
 {

@@ -1,13 +1,23 @@
-import React, { useContext } from 'react'
+import React, {useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import { MyContext } from '../DataStore/DataPackage'
+import axios from 'axios';
 
 function StoryTech() {
-    const[techStoryData]=useContext(MyContext);
+    const[data,setData]=useState([])
+
+    useEffect(()=>{
+      axios.get("https://backend-api-rg16.onrender.com/api/blog")
+      .then((res)=>{
+        setData(res.data)
+      })
+      .catch((error)=>{
+        console.log(error);
+      })
+    },[data])
   return (
     <div>
       {
-        techStoryData.filter((item)=>item.category==="Technology" && item.id===65).map((value,index)=>{
+        data.filter((item)=>item.category==="Technology" && item.id===65).map((value,index)=>{
             return(
                 <div key={index} className='LatestStory'>
                     {/* <div className='storyContent'> */}

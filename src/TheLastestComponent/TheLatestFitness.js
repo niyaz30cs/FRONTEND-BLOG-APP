@@ -1,19 +1,28 @@
-import React, { useContext } from 'react'
+import React, {useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import { MyContext } from '../DataStore/DataPackage'
-import Fitness from '../Component/Fitness';
+import axios from 'axios';
 
 function TheLatestFitness() {
-    const [theLatestFit] = useContext(MyContext);
+    const[data,setData]=useState([])
+
+    useEffect(()=>{
+      axios.get("https://backend-api-rg16.onrender.com/api/blog")
+      .then((res)=>{
+        setData(res.data)
+      })
+      .catch((error)=>{
+        console.log(error);
+      })
+    },[data])
     return (
         <div>
             {
-                theLatestFit.filter((item) => item.category === "Fitness" && item.id === 96).map((value, index) => {
+                data.filter((item) => item.category === "Fitness" && item.id === 96).map((value, index) => {
                     return (
                         <div className='Thelatest' key={index}>
                             <img src={value.urlToImage} alt='look' className='latestImage' />
                             <div className='latestContent'>
-                            <Link to={`/details/${Fitness.title}`} state={value} className='removeLine'><h3>{value.title}</h3></Link>
+                            <Link to={`/details/${value.id}`} state={value} className='removeLine'><h3>{value.title}</h3></Link>
                             <p>{value.description}</p>
                             <p>{value.publishedAt}</p>
                             </div>
